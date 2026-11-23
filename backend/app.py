@@ -14,7 +14,7 @@ from storedata import (
     serialize_aktif,
 )
 
-FRONTEND_DIR = Path(__file__).resolve().parent.parent
+FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
 app = Flask(__name__, static_folder=str(FRONTEND_DIR), static_url_path="")
 
 
